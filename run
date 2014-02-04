@@ -1,0 +1,3 @@
+#!/bin/bash
+chown jenkins /home/jenkins/.jenkins
+exec chpst -u jenkins java -jar /opt/jenkins.war >>/var/log/jenkins.log 2>&1

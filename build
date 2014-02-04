@@ -1,0 +1,4 @@
+docker stop jenkins
+docker rm jenkins
+docker build -t jenkins_img .
+docker run -name jenkins -p 8080:8080 -d jenkins_img
